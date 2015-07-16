@@ -1,24 +1,22 @@
 # screenshots
 
-- [-] resize
-- [-] convert to jpg
-- [ ] optimize
+Node scripts for taking screenshots and uploading to S3
+
+Take a screenshot
 
 ```bash
 npm start http://jxnblk.com
 ```
 
-### Folders
+```bash
+npm run resize
+```
 
-- captures - raw screenshot
-- optimized - minified
-- uploads - to be uploaded
-- archive - minified and uploaded
+```bash
+npm run s3
+```
 
-### Scripts
-
-- capture.js - screenshot
-- minify.js - optimization
-- s3.js - upload
-- write manifest.json
+```bash
+npm run links
+```
 
