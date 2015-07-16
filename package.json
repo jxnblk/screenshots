@@ -1,0 +1,24 @@
+{
+  "name": "screenshots",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "resize": "node resize.js",
+    "screenshot": "node capture.js",
+    "s3": "node s3.js",
+    "links": "node links.js",
+    "start": "npm run screenshot",
+    "upload": ""
+  },
+  "author": "Brent Jackson",
+  "license": "MIT",
+  "dependencies": {
+    "fs.extra": "^1.3.2",
+    "gm": "^1.18.1",
+    "imagemin": "^3.2.0",
+    "lodash": "^3.10.0",
+    "moment": "^2.10.3",
+    "node-webkit-screenshot": "^0.3.1",
+    "s3": "^4.4.0"
+  }
+}
