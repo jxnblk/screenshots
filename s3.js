@@ -35,7 +35,7 @@ function upload(filename) {
     manifest.uploads = manifest.uploads || []
     manifest.uploads.push(filename)
     fs.writeFileSync('manifest.json', JSON.stringify(manifest))
-    fs.move('resized/' + filename, 'archive')
+    fs.move('resized/' + filename, 'archive/' + filename)
   })
 
 }
